@@ -153,7 +153,9 @@ const rules = {
 
   embedded_braced_expression: $ =>
     seq(
-      '{',
+      // Use an external scanner for the opening brace so we can restrict embedded braced
+      // expressions to ones that start with a $.variable.
+      alias($._embedded_opening_brace, '{'),
       choice(
         $.variable,
         $.call_expression,
@@ -1139,6 +1141,7 @@ module.exports = grammar({
     $._heredoc_body,
     $._heredoc_end_newline,
     $._heredoc_end,
+    $._embedded_opening_brace,
   ],
 
   supertypes: $ => [
