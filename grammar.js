@@ -56,7 +56,6 @@ const rules = {
       'type',
       'newtype',
       'shape',
-      'tupe',
       'clone',
       'new',
       'print',
