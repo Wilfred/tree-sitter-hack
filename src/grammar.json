@@ -82,6 +82,10 @@
           "value": "print"
         },
         {
+          "type": "STRING",
+          "value": "namespace"
+        },
+        {
           "type": "SYMBOL",
           "name": "_primitive_type"
         },
@@ -8239,6 +8243,7 @@
       "list_expression"
     ]
   ],
+  "precedences": [],
   "externals": [
     {
       "type": "SYMBOL",
