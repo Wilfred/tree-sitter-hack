@@ -4297,12 +4297,20 @@
     "named": false
   },
   {
+    "type": "nothing",
+    "named": false
+  },
+  {
     "type": "null",
     "named": false
   },
   {
     "type": "nullable_modifier",
     "named": true
+  },
+  {
+    "type": "num",
+    "named": false
   },
   {
     "type": "open_modifier",
@@ -4349,6 +4357,10 @@
     "named": false
   },
   {
+    "type": "resource",
+    "named": false
+  },
+  {
     "type": "return",
     "named": false
   },
@@ -4370,11 +4382,11 @@
   },
   {
     "type": "string",
-    "named": true
+    "named": false
   },
   {
     "type": "string",
-    "named": false
+    "named": true
   },
   {
     "type": "super",
