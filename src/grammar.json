@@ -83,11 +83,11 @@
         },
         {
           "type": "SYMBOL",
-          "name": "_primitive_type"
+          "name": "primitive_type"
         },
         {
           "type": "SYMBOL",
-          "name": "_collection_type"
+          "name": "collection_type"
         }
       ]
     },
@@ -2013,7 +2013,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "_primitive_type"
+              "name": "primitive_type"
             },
             {
               "type": "SYMBOL",
@@ -2021,7 +2021,7 @@
             },
             {
               "type": "SYMBOL",
-              "name": "_collection_type"
+              "name": "collection_type"
             },
             {
               "type": "SYMBOL",
@@ -2448,7 +2448,7 @@
         }
       ]
     },
-    "_collection_type": {
+    "collection_type": {
       "type": "CHOICE",
       "members": [
         {
@@ -2477,7 +2477,7 @@
         }
       ]
     },
-    "_primitive_type": {
+    "primitive_type": {
       "type": "CHOICE",
       "members": [
         {
@@ -2826,7 +2826,7 @@
           "type": "ALIAS",
           "content": {
             "type": "SYMBOL",
-            "name": "_collection_type"
+            "name": "collection_type"
           },
           "named": true,
           "value": "array_type"
@@ -5286,7 +5286,7 @@
                 },
                 {
                   "type": "SYMBOL",
-                  "name": "_collection_type"
+                  "name": "collection_type"
                 }
               ]
             }
@@ -8272,8 +8272,8 @@
     "_variablish",
     "_class_modifier",
     "_type",
-    "_primitive_type",
-    "_collection_type",
+    "primitive_type",
+    "collection_type",
     "_xhp_attribute_expression",
     "_keyword",
     "_xhp_identifier"

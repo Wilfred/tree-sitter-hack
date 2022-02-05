@@ -60,8 +60,8 @@ const rules = {
       'clone',
       'new',
       'print',
-      $._primitive_type,
-      $._collection_type,
+      $.primitive_type,
+      $.collection_type,
     ),
 
   qualified_identifier: $ =>
@@ -430,9 +430,9 @@ const rules = {
     seq(
       rep($._type_modifier),
       choice(
-        $._primitive_type,
+        $.primitive_type,
         $.qualified_identifier,
-        $._collection_type,
+        $.collection_type,
         $._xhp_identifier,
       ),
       opt($.type_arguments),
@@ -482,10 +482,10 @@ const rules = {
       $.identifier,
     ),
 
-  _collection_type: $ =>
+  collection_type: $ =>
     choice('array', 'varray', 'darray', 'vec', 'dict', 'keyset'),
 
-  _primitive_type: $ =>
+  primitive_type: $ =>
     choice(
       'bool',
       'float',
@@ -540,7 +540,7 @@ const rules = {
 
   array: $ =>
     seq(
-      alias($._collection_type, $.array_type),
+      alias($.collection_type, $.array_type),
       opt($.type_arguments),
       '[',
       opt(com(choice($._expression, $.element_initializer), ',')),
@@ -714,7 +714,7 @@ const rules = {
   call_expression: $ =>
     prec.paren(
       seq(
-        field('function', choice($._expression, $._collection_type)),
+        field('function', choice($._expression, $.collection_type)),
         opt($.type_arguments),
         $.arguments,
       ),
@@ -1179,8 +1179,8 @@ module.exports = grammar({
     $._variablish,
     $._class_modifier,
     $._type,
-    $._primitive_type,
-    $._collection_type,
+    $.primitive_type,
+    $.collection_type,
     $._xhp_attribute_expression,
     $._keyword,
     $._xhp_identifier,

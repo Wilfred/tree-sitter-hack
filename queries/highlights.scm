@@ -29,3 +29,5 @@
 ] @keyword
 
 (type_specifier) @type
+(collection_type) @type
+(primitive_type) @type
